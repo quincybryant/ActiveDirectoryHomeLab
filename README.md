@@ -43,7 +43,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Created new forest: `lab.local`
 - Verified AD DS and DNS functionality
 
-![DC System Info](screenshots/domain-controller/dc01_system_about.png)
+![DC System Info](screenshots/domain-controller/dc01-system-about.png)
 ![DNS Configuration](screenshots/domain-controller/dc01_dns_config.png)
 
 ---
