@@ -32,7 +32,6 @@ This project demonstrates the deployment and configuration of an on-premises Act
   - Domain-joined workstation
 
 - **Domain Name:** `lab.local`
-- ![VMware Lab Overview](screenshots/client/client01-domain-joined.png)
 
 ---
 
@@ -45,7 +44,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Verified AD DS and DNS functionality
 
 ![DC System Info](screenshots/domain-controller/dc01-system-about.png)
-![DNS Configuration](screenshots/domain-controller/dc01_dns_config.png)
+![DNS Configuration](screenshots/domain-controller/dns-config.png)
 
 ---
 
@@ -62,8 +61,8 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Users placed in the designated OU
 - Verified creation using ADUC and PowerShell
 
-![PowerShell User Creation](screenshots/users/powershell_user_creation.png)
-![Users Created](screenshots/users/users_created_verification.png)
+![PowerShell User Creation](screenshots/users/powershell-bulk-user-creation.png)
+![Users Created](screenshots/users/users-count-verification.png)
 
 ---
 
@@ -72,9 +71,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Joined Windows 10 client to `lab.local`
 - Verified secure domain trust
 
-![Client System Info](screenshots/client/client01_system_about.png)
-![Domain Join](screenshots/client/client01_domain_joined.png)
-![Client DNS](screenshots/client/client01_dns_settings.png)
+![Domain Join](screenshots/client/client01-domain-joined.png) 
 
 ---
 
@@ -85,8 +82,8 @@ This project demonstrates the deployment and configuration of an on-premises Act
   - Account lockout threshold and duration
 - Policies applied domain-wide
 
-![Password Policy](screenshots/gpo/password_policy.png)
-![Account Lockout Policy](screenshots/gpo/account_lockout_policy.png)
+![Password Policy](screenshots/gpo/gpo-password-policy.png)
+![Account Lockout Policy](screenshots/gpo/gpo-account-lockout.png)
 
 ---
 
@@ -95,7 +92,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Verified identity using `whoami`
 - Triggered account lockout through failed logon attempts
 
-![WhoAmI](screenshots/client/client01_whoami.png)
+![WhoAmI](screenshots/client/Client-whoami-domain-user.png)
 ![Ping DC](screenshots/networking/ping_dc01.png)
 
 ---
