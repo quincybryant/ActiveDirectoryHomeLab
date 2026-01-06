@@ -32,6 +32,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
   - Domain-joined workstation
 
 - **Domain Name:** `lab.local`
+- ![VMware Lab Overview](screenshots/client/client01-domain-joined.png)
 
 ---
 
