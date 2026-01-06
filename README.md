@@ -81,7 +81,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
   - Minimum password length
   - Account lockout threshold and duration
 - Policies applied domain-wide
-
+![GPO Scope](screenshots/gpo/gpo-scope.png)
 ![Password Policy](screenshots/gpo/gpo-password-policy.png)
 ![Account Lockout Policy](screenshots/gpo/gpo-account-lockout.png)
 
