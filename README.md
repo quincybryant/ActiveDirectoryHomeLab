@@ -62,7 +62,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Verified creation using ADUC and PowerShell
 
 ![PowerShell User Creation](screenshots/users/powershell-bulk-user-creation.png)
-![Users Created](screenshots/users/users-count-verification.png)
+![Users Created](screenshots/users/user-count-verification.png)
 
 ---
 
