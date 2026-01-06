@@ -21,7 +21,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ![VMware Lab Overview](screenshots/vmware-lab-overview/vmware-lab-overview.png)
 
-*Displays the two virtual machines (Domain Controller and Domain Client) configured in VMware Workstation Pro.*
+*Displays the two virtual machines (Domain Controller and Domain Client) configured in VMware Worksatation Pro. *
 
 - **DC01** – Windows Server 2022  
   - Active Directory Domain Services
@@ -47,7 +47,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 *Confirms Windows Server installation and system role as the Domain Controller.*
 
 ![DNS Configuration](screenshots/domain-controller/dns-config.png)
-*Shows DNS service running on DC01 with the domain namespace configured.*
+*Shows DNS service running on DC01 with the domain namesace configured.*
 
 ---
 
@@ -79,7 +79,8 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Verified secure domain trust
 
 ![Domain Join](screenshots/client/client01-domain-joined.png) 
-*Confirms Windows client successfully joined to the domain.*
+*Confirms Windows client successfully joined the domain.*
+
 ---
 
 ### 5️⃣ Group Policy Configuration
