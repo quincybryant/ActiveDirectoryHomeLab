@@ -19,7 +19,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ## 🏗️ Lab Architecture
 
-![VMware Lab Overview](screenshots/overview/vmware_lab_overview.png)
+![VMware Lab Overview](screenshots/vmware-lab-overview/vmware-lab-overview.png)
 
 *VMware Workstation Pro showing the Domain Controller (DC01) and domain-joined client (CLIENT01).*
 
