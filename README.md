@@ -21,7 +21,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ![VMware Lab Overview](screenshots/vmware-lab-overview/vmware-lab-overview.png)
 
-*VMware Workstation Pro showing the Domain Controller (DC01) and domain-joined client (CLIENT01).*
+*Displays the two virtual machines (Domain Controller and Domain Client) configured in VMware Workstation Pro.*
 
 - **DC01** – Windows Server 2022  
   - Active Directory Domain Services
@@ -44,7 +44,9 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Verified AD DS and DNS functionality
 
 ![DC System Info](screenshots/domain-controller/dc01-system-about.png)
+*Confirms Windows Server installation and system role as the Domain Controller.*
 ![DNS Configuration](screenshots/domain-controller/dns-config.png)
+*Shows DNS service running on DC01 with the domain namespace configured.*
 
 ---
 
@@ -53,6 +55,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Enabled deletion protection for OUs
 
 ![AD OUs](screenshots/domain-controller/ou-structure.png)
+*Displays Organizational Units created for domain user management.*
 
 ---
 
@@ -62,7 +65,9 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Verified creation using ADUC and PowerShell
 
 ![PowerShell User Creation](screenshots/users/powershell-bulk-user-creation.png)
+*PowerShell script used to create 50 domain users in Active Directory.*
 ![Users Created](screenshots/users/user-count-verification.png)
+*PowerShell command verifying successful creation of all domain users.*
 
 ---
 
@@ -72,7 +77,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Verified secure domain trust
 
 ![Domain Join](screenshots/client/client01-domain-joined.png) 
-
+*Confirms Windows client successfully joined to the domain.*
 ---
 
 ### 5️⃣ Group Policy Configuration
@@ -82,8 +87,10 @@ This project demonstrates the deployment and configuration of an on-premises Act
   - Account lockout threshold and duration
 - Policies applied domain-wide
 ![GPO Scope](screenshots/gpo/gpo-scope.png)
+*Confirms the GPO is linked to the domain and applied to authenticated users.*
 ![Password Policy](screenshots/gpo/gpo-password-policy.png)
 ![Account Lockout Policy](screenshots/gpo/gpo-account-lockout.png)
+*Group Policy enforcing password complexity and account lockout settings.*
 
 ---
 
@@ -93,6 +100,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Triggered account lockout through failed logon attempts
 
 ![WhoAmI](screenshots/client/Client-whoami-domain-user.png)
+*Validates domain user authentication on the client system.*
 ![Ping DC](screenshots/networking/ping_dc01.png)
 
 ---
