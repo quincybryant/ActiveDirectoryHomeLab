@@ -53,7 +53,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Created dedicated OUs for domain users
 - Enabled deletion protection for OUs
 
-![AD OUs](screenshots/domain-controller/dc01_ad_users_ou.png)
+![AD OUs](screenshots/domain-controller/ou-structure.png)
 
 ---
 
