@@ -45,6 +45,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ![DC System Info](screenshots/domain-controller/dc01-system-about.png)
 *Confirms Windows Server installation and system role as the Domain Controller.*
+
 ![DNS Configuration](screenshots/domain-controller/dns-config.png)
 *Shows DNS service running on DC01 with the domain namespace configured.*
 
@@ -66,6 +67,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ![PowerShell User Creation](screenshots/users/powershell-bulk-user-creation.png)
 *PowerShell script used to create 50 domain users in Active Directory.*
+
 ![Users Created](screenshots/users/user-count-verification.png)
 *PowerShell command verifying successful creation of all domain users.*
 
@@ -88,6 +90,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Policies applied domain-wide
 ![GPO Scope](screenshots/gpo/gpo-scope.png)
 *Confirms the GPO is linked to the domain and applied to authenticated users.*
+
 ![Password Policy](screenshots/gpo/gpo-password-policy.png)
 ![Account Lockout Policy](screenshots/gpo/gpo-account-lockout.png)
 *Group Policy enforcing password complexity and account lockout settings.*
@@ -101,6 +104,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ![WhoAmI](screenshots/client/Client-whoami-domain-user.png)
 *Validates domain user authentication on the client system.*
+
 ![Ping DC](screenshots/networking/ping_dc01.png)
 
 ---
