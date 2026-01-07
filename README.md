@@ -19,10 +19,6 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ## 🏗️ Lab Architecture
 
-![VMware Lab Overview](screenshots/vmware-lab-overview/vmware-lab-overview.png)
-
-*Displays the two virtual machines (Domain Controller and Domain Client) configured in VMware Worksatation Pro. *
-
 - **DC01** – Windows Server 2022  
   - Active Directory Domain Services
   - DNS Server
@@ -32,6 +28,9 @@ This project demonstrates the deployment and configuration of an on-premises Act
   - Domain-joined workstation
 
 - **Domain Name:** `lab.local`
+  
+![VMware Lab Overview](screenshots/vmware-lab-overview/vmware-lab-overview.png)
+*Displays the two virtual machines (Domain Controller and Domain Client) configured in VMware Worksatation Pro.*
 
 ---
 
@@ -81,6 +80,9 @@ This project demonstrates the deployment and configuration of an on-premises Act
 ![Domain Join](screenshots/client/client01-domain-joined.png) 
 *Confirms Windows client successfully joined the domain.*
 
+![Ping DC](screenshots/networking/ping_dc01.png)
+*Verifies the client system can successfully reach the domain controller using hostname-based DNS resolution.*
+
 ---
 
 ### 5️⃣ Group Policy Configuration
@@ -89,6 +91,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
   - Minimum password length
   - Account lockout threshold and duration
 - Policies applied domain-wide
+
 ![GPO Scope](screenshots/gpo/gpo-scope.png)
 *Confirms the GPO is linked to the domain and applied to authenticated users.*
 
@@ -106,7 +109,8 @@ This project demonstrates the deployment and configuration of an on-premises Act
 ![WhoAmI](screenshots/client/Client-whoami-domain-user.png)
 *Validates domain user authentication on the client system.*
 
-![Ping DC](screenshots/networking/ping_dc01.png)
+![GPO Verification](screenshots/gpo/gpo-application-verification)
+*Confirms Group Policy applied successfully to the client machine.*
 
 ---
 
@@ -116,7 +120,11 @@ This project demonstrates the deployment and configuration of an on-premises Act
   - Event ID 4624 (successful logon)
   - Event ID 4625 (failed logon / lockout)
 
-![Security Logs](screenshots/networking/nslookup_corp_local.png)
+![Security Logs](screenshots/networking/event-4624-success.png)
+*Successful Logon Event (4624) – Confirms a domain user successfully authenticated to the domain.*
+
+![Security Logs](screenshots/networking/event-4625-failed.png)
+*Failed Logon Event (4625) – Shows unsuccessful authentication attempts and account lockout behavior.*
 
 ---
 
