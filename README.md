@@ -128,7 +128,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 ![Failed Logon Event](screenshots/networking/event-4625-failed.png)
 *Failed Logon Event (4625) – Shows unsuccessful authentication attempts and account lockout behavior.*
 
-![Account Lockout Event](svreenshots/networking/event-4740-lockout.png)
+![Account Lockout Event](screenshots/networking/event-4740-lockout.png)
 *Account Lockout Event (4740) – Confirms Group Policy account lockout enforcement and identifies the source system.*
 
 ---
