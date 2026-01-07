@@ -30,7 +30,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - **Domain Name:** `lab.local`
   
 ![VMware Lab Overview](screenshots/vmware-lab-overview/vmware-lab-overview.png)
-*Displays the two virtual machines (Domain Controller and Domain Client) configured in VMware Worksatation Pro.*
+*Displays the two virtual machines (Domain Controller and Domain Client) configured in VMware Workstation Pro.*
 
 ---
 
@@ -46,7 +46,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 *Confirms Windows Server installation and system role as the Domain Controller.*
 
 ![DNS Configuration](screenshots/domain-controller/dns-config.png)
-*Shows DNS service running on DC01 with the domain namesace configured.*
+*Shows DNS service running on DC01 with the domain namespace configured.*
 
 ---
 
@@ -106,25 +106,30 @@ This project demonstrates the deployment and configuration of an on-premises Act
 - Verified identity using `whoami`
 - Triggered account lockout through failed logon attempts
 
-![WhoAmI](screenshots/client/Client-whoami-domain-user.png)
+![WhoAmI](screenshots/client/client-whoami-domain-user.png)
 *Validates domain user authentication on the client system.*
 
 ![GPO Verification](screenshots/gpo/gpo-application-verification.png)
-*Confirms Group Policy applied successfully to the client machine.*
+*Confirms Group Policy applied successfully to the client machine using gpresult.*
 
 ---
 
 ### 7️⃣ Security Event Logging
 - Reviewed authentication logs on DC01
+- Correlated authentication steps from CLIENT01 to DC01 using Event Viewer
 - Verified:
   - Event ID 4624 (successful logon)
-  - Event ID 4625 (failed logon / lockout)
+  - Event ID 4625 (failed logon)
+  - Event ID 4740 (lockout)
 
-![Security Logs](screenshots/networking/event-4624-success.png)
+![Security Logon Event](screenshots/networking/event-4624-success.png)
 *Successful Logon Event (4624) – Confirms a domain user successfully authenticated to the domain.*
 
-![Security Logs](screenshots/networking/event-4625-failed.png)
+![Failed Logon Event](screenshots/networking/event-4625-failed.png)
 *Failed Logon Event (4625) – Shows unsuccessful authentication attempts and account lockout behavior.*
+
+![Account Lockout Event](svreenshots/networking/event-4740-lockout.png)
+*Account Lockout Event (4740) – Confirms Group Policy account lockout enforcement and identifies the source system.*
 
 ---
 
