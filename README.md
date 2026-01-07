@@ -116,7 +116,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ### 7️⃣ Security Event Logging
 - Reviewed authentication logs on DC01
-- Correlated authentication steps from CLIENT01 to DC01 using Event Viewer
+- Correlated authentication steps from CLIENT01 to DC01 using Windows Security event logs
 - Verified:
   - Event ID 4624 (successful logon)
   - Event ID 4625 (failed logon)
@@ -129,7 +129,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 *Failed Logon Event (4625) – Shows unsuccessful authentication attempts and account lockout behavior.*
 
 ![Account Lockout Event](screenshots/networking/event-4740-lockout.png)
-*Account Lockout Event (4740) – Confirms Group Policy account lockout enforcement and identifies the source system.*
+*Account Lockout Event (4740) – Confirms Group Policy account lockout enforcement following authentication attempts.*
 
 ---
 
