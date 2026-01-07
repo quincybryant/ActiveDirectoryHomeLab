@@ -109,7 +109,7 @@ This project demonstrates the deployment and configuration of an on-premises Act
 ![WhoAmI](screenshots/client/Client-whoami-domain-user.png)
 *Validates domain user authentication on the client system.*
 
-![GPO Verification](screenshots/gpo/gpo-application-verification)
+![GPO Verification](screenshots/gpo/gpo-application-verification.png)
 *Confirms Group Policy applied successfully to the client machine.*
 
 ---
