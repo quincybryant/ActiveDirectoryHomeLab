@@ -5,6 +5,11 @@ This project demonstrates the deployment and configuration of an on-premises Act
 
 ---
 
+## 🛡️ Why This Lab Matters
+Active Directory is the core identity service in most enterprise environments and is a primary target for attackers. This lab demonstrates how centralized authentication, Group Policy enforcement, and audit logging are implemented and validated, providing foundational knowledge for detecting and responding to credential abuse and misconfigurations in real-world networks.
+
+---
+
 ## 🧰 Technologies Used
 - VMware Workstation Pro
 - Windows Server 2022 (Domain Controller)
